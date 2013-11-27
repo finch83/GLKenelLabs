@@ -6,6 +6,9 @@ MODULE_LICENSE("Dual BSD/GPL");
 static int hello_init(void)
 {
    printk(KERN_ALERT "Hello, world\n");
+   int* x = NULL;
+   int y = *x;
+   return 0;
 }
 
 static void hello_exit(void) 

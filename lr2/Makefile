@@ -1,7 +1,7 @@
 obj-m := hello.o
 
-KERNELDIR := /lib/module/`uname -r`/build
+KERNELDIR := /lib/modules/`uname -r`/build
 
 all:
-      $(MAKE) -C $(KERNELDIR) SUBDIRS=$(CURDIR) modules
+	$(MAKE) -C $(KERNELDIR) SUBDIRS=$(CURDIR) modules
 
